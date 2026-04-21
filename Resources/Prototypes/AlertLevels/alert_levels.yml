@@ -70,3 +70,12 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
+    SILLY:
+      announcement: alert-level-silly-announcement
+      selectable: true
+      #sound: to be determined
+      color: HotPink
+      emergencyLightColor: HotPink
+      forceEnableEmergencyLights: true
+      shuttleTime: 600
+
