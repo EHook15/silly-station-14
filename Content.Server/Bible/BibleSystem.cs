@@ -119,7 +119,7 @@ namespace Content.Server.Bible
             var targetEnt = Identity.Entity(args.Target.Value, EntityManager);
 
             // This only has a chance to fail if the target is not wearing anything on their head and is not a familiar.
-            if (!HasComp<FamiliarComponent>(args.Target.Value))
+            if (!_invSystem.TryGetSlotEntity(args.Target.Value, "head", out _) && !HasComp<FamiliarComponent>(args.Target.Value))
             {
                 if (_random.Prob(component.FailChance))
                 {
