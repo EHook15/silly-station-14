@@ -73,7 +73,10 @@
     SILLY:
       announcement: alert-level-silly-announcement
       selectable: true
-      sound: Resources/Audio/Effects/Gatorade/audiomass-output.mp3
+      sound:
+        path: Resources/Audio/Effects/Gatorade/audiomass-output.mp3
+        params:
+          volume: -3
       color: HotPink
       emergencyLightColor: HotPink
       forceEnableEmergencyLights: true
