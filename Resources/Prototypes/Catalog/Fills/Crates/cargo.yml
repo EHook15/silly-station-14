@@ -53,25 +53,24 @@
           tableId: LotteryUsefulEntityTable
         - !type:NestedSelector
           tableId: LotteryNotUsefulEntityTable
+        - !type:NestedSelector
+          tableId: LotterySillyEntityTable
 
 - type: entityTable
   id: LotteryCashEntityTable
   table: !type:GroupSelector
     children:
     - id: SpaceCash1000000
-      weight: 0.01
-    - id: SpaceCash10000
       weight: 0.1
+    - id: SpaceCash10000
+      weight: 0.5
     - id: SpaceCash5000
+      weight: 2
     - id: SpaceCash2500
       weight: 4
     - id: SpaceCash500
       weight: 3
     - id: SpaceCash100
-    - id: SpaceCash10
-      weight: 0.5
-    - id: SpaceCash
-      weight: 0.1
 
 - type: entityTable
   id: LotteryJunkEntityTable
@@ -106,27 +105,20 @@
   table: !type:GroupSelector
     children:
     - id: WeaponPulseCarbine
-      weight: 0.01
     - id: WeaponRifleAk
-      weight: 0.01
     - id: WeaponLauncherPirateCannon
-      weight: 0.1
     - id: WeaponPistolCHIMP
-      weight: 0.1
     - id: WeaponSniperMosin
     - id: WeaponMakeshiftLaser
-      weight: 0.1
     - id: Sledgehammer
-      weight: 0.1
     - id: WeaponMeleeToolboxRobust
     - id: ThrowingStar
     - id: WeaponLaserGun
-      weight: 0.1
     - id: WeaponShotgunHandmade
     - id: WeaponFlareGun
     - id: Bola
     - id: Shovel
-    - id: WeaponTurretXeno
+    - id: Throngler
     - !type:NestedSelector
       tableId: AllToyWeaponsTable
 
@@ -221,8 +213,6 @@
     - id: HydroponicsToolHatchet
     - id: ToyAmongPequeno
     - id: Lamp
-    - id: FloraTreeLarge
-    - id: LightTree #Funny mobs maybe
 
 - type: entityTable
   id: LotteryNotUsefulEntityTable
@@ -230,7 +220,6 @@
     children:
     - id: LidSalami
     - id: MobHamsterHamlet
-    - id: MobLaserRaptor
     - id: DrinkNothing
     - id: FoodOatmeal
     - id: FoodDonutChaos
@@ -240,7 +229,6 @@
     - id: EncryptionKeyCommon
     - id: CableHVStack1
     - id: DrinkMugBlue
-    - id: CablecuffsBroken
     - id: FoodPlateTin
     - id: WeakKudzu
     - id: MagazineFoamBox
@@ -249,3 +237,17 @@
       weight: 0.8
     - id: GrenadeFoamDart
       weight: 0.1
+
+- type: entityTable
+  id: LotterySillyEntityTable
+  table: !type:GroupSelector
+    children:
+    - id: Throngler
+      weight: .2
+    - id: PlushieLizardJobMultiweh
+    - id: SpaceCash10000
+    - id: ClothingHeadHatCatEars
+    - id: WizardsGrimoireDebug
+      weight: .2
+    - id: BaseUplinkRadioDebug
+      weight: .2
