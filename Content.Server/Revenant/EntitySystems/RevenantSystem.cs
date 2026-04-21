@@ -207,31 +207,6 @@ public sealed partial class RevenantSystem : EntitySystem
             _atmosphere.AddHeat(air, dQ);
     }
 
-    /// <summary>
-    /// Adds rust to the walls surrounding the revenant.
-    /// </summary>
-    private void RustArea(Entity<RevenantComponent> ent)
-    {
-        var near = _lookup.GetEntitiesInRange(ent.Owner, 5);
-
-        var enumer = near.GetEnumerator();
-        while (enumer.MoveNext())
-        {
-            var uid = enumer.Current;
-            if (TryComp(uid, out TransformComponent? transform))
-            {
-                if (TryPrototype(uid, out var proto))
-                {
-                    if (proto.ID == "WallSolid")
-                    {
-                        QueueDel(uid);
-                        Spawn("WallSolidRust", transform.Coordinates);
-                    }
-                }
-            }
-        }
-    }
-
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
@@ -251,8 +226,6 @@ public sealed partial class RevenantSystem : EntitySystem
             }
 
             ChillArea((uid, rev));
-
-            RustArea((uid, rev));
         }
     }
 }
