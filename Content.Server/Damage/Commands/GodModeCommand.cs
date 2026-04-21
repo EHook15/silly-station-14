@@ -6,11 +6,11 @@ using Robust.Shared.Console;
 namespace Content.Server.Damage.Commands
 {
     [AdminCommand(AdminFlags.Fun)]
-    public sealed class GodModeCommand : IConsoleCommand
+    public sealed class SillyModeCommand : IConsoleCommand
     {
         [Dependency] private readonly IEntityManager _entManager = default!;
 
-        public string Command => "godmode";
+        public string Command => "sillymode";
         public string Description => "Makes your entity or another invulnerable to almost anything. May have irreversible changes.";
         public string Help => $"Usage: {Command} / {Command} <entityUid>";
 
