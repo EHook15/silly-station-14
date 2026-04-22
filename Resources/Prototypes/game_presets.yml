@@ -3,7 +3,7 @@
   alias:
     - survival
   name: survival-title
-  showInVote: false # secret
+  showInVote: true # secret
   description: survival-description
   rules:
     - MeteorSwarmScheduler
@@ -141,11 +141,11 @@
     - tator
   name: traitor-title
   description: traitor-description
-  showInVote: false
+  showInVote: true
   rules:
   - DummyNonAntagChance
   - Traitor
-  - SubGamemodesRuleNoWizard
+  - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -170,11 +170,11 @@
     - nukeops
   name: nukeops-title
   description: nukeops-description
-  showInVote: false
+  showInVote: true
   rules:
   - Nukeops
   - DummyNonAntagChance
-  - SubGamemodesRuleNoWizard
+  - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -188,11 +188,11 @@
     - revolutionaries
   name: rev-title
   description: rev-description
-  showInVote: false
+  showInVote: true
   rules:
   - DummyNonAntagChance
   - Revolutionary
-  - SubGamemodesRuleNoWizard
+  - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -204,7 +204,7 @@
   - wizard
   name: wizard-title
   description: wizard-description
-  showInVote: false
+  showInVote: true
   rules:
   - Wizard
   - DummyNonAntagChance
@@ -220,11 +220,11 @@
     - xenoborgs
   name: xenoborgs-title
   description: xenoborgs-description
-  showInVote: false
+  showInVote: true
   rules:
   - Xenoborgs
   - DummyNonAntagChance
-  - SubGamemodesRuleNoWizardNoXenoborg # no two motherships
+  - SubGamemodesRuleNoXenoborg # no two motherships
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -240,9 +240,10 @@
   - zomber
   name: zombie-title
   description: zombie-description
-  showInVote: false
+  showInVote: true
   rules:
   - Zombie
+  - SubGamemodesRule
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
@@ -259,6 +260,7 @@
   showInVote: false
   rules:
   - Zombie
+  - SubGamemodesRule
   - BasicStationEventScheduler
   - KesslerSyndromeScheduler
   - SpaceTrafficControlEventScheduler
