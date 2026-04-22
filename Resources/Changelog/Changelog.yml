@@ -1,18 +1,4 @@
 ﻿Entries:
-- author: Princess-Cheeseballs
-  changes:
-  - message: You can now get drunk again.
-    type: Fix
-  id: 9143
-  time: '2025-10-21T20:24:06.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/41002
-- author: SlamBamActionman
-  changes:
-  - message: The hypopen now requires a short delay before being filled.
-    type: Tweak
-  id: 9144
-  time: '2025-10-21T22:17:15.0000000+00:00'
-  url: https://github.com/space-wizards/space-station-14/pull/40538
 - author: SolidSyn
   changes:
   - message: Changed the cooldown on wizards mind swap spell from 5 minutes to 3 minutes.
@@ -4051,3 +4037,18 @@
   id: 9654
   time: '2026-04-21T04:37:45.0000000+00:00'
   url: https://github.com/space-wizards/space-station-14/pull/40900
+- author: themias, jessicamaybe
+  changes:
+  - message: Added a traitor objective to break into letters and packages
+    type: Add
+  id: 9655
+  time: '2026-04-22T00:58:58.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/43560
+- author: themias
+  changes:
+  - message: Stunning with ninja gloves now causes the swirling stars effect on the
+      victim
+    type: Fix
+  id: 9656
+  time: '2026-04-22T04:58:52.0000000+00:00'
+  url: https://github.com/space-wizards/space-station-14/pull/43279
