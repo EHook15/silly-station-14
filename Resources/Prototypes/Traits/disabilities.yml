@@ -106,3 +106,10 @@
   category: Disabilities
   components:
     - type: ImpairedMobility
+
+- type: trait
+  id: Sillyness
+  name: trait-sillyness-name
+  description: trait-sillyness-desc
+  traitGear: SnapPopBox
+  category: Disabilities
