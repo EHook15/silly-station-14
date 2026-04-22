@@ -191,6 +191,10 @@
   - SPACE
   - SUNLIGHT
   - WATER
+  - ELEANOR
+  - BEN
+  - PETER
+  - OLIVER
 
 # Severity is how bad the allergy is.
 - type: dataset
@@ -359,6 +363,7 @@
   - STATION ENGINEERS
   # - VIROLOGISTS
   - WARDENS
+  # - ROBOTICISTS
 
 # only including complex dangerous or funny drinks no water allowed
 - type: dataset
@@ -381,6 +386,7 @@
   - SPACE LUBE
   - SULFURIC ACID
   - WELDING FUEL
+  - SILLY FENT
 
 - type: dataset
   id: IonStormFeelings
