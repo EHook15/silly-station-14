@@ -319,16 +319,16 @@
     Bloodstream:
       effects: # It would be nice to have speech slurred or mumbly, but accents are a bit iffy atm. Same for distortion effects.
       - !type:MovementSpeedModifier
-        walkSpeedModifier: 0.65
-        sprintSpeedModifier: 0.65
+        walkSpeedModifier: 0.5
+        sprintSpeedModifier: 0.5
       - !type:ModifyStatusEffect
         conditions:
         - !type:ReagentCondition
           reagent: Nocturine
           min: 8
         effectProto: StatusEffectForcedSleeping
-        time: 9
-        delay: 5
+        time: 11
+        delay: 3
 
 - type: reagent
   id: MuteToxin
