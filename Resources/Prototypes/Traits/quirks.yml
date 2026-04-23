@@ -29,7 +29,4 @@
   id: Silly
   name: trait-silly-name
   category: Quirks
-  components:
-    - traitGear: SnapPopBox
-    - traitGear: PotatoAI
-    - traitGear: TrashBananaPeelExplosiveUnarmed
+  traitGear: TrashBananaPeelExplosiveUnarmed
