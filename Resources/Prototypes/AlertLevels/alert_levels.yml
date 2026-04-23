@@ -73,10 +73,7 @@
     SILLY:
       announcement: alert-level-silly-announcement
       selectable: true
-      sound:
-        path: /Audio/Misc/GATORADE.ogg
-        params:
-          volume: -3
+      sound: /Audio/Misc/GATORADE.ogg
       emergencyLightColor: HotPink
       color: HotPink
       forceEnableEmergencyLights: true
