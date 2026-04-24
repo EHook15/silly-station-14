@@ -65,3 +65,6 @@ trait-hemophilia-desc = Your body fails to make blood clots.
 
 trait-impaired-mobility-name = Impaired Mobility
 trait-impaired-mobility-desc = You have difficulty moving without a mobility aid.
+
+trait-silly-name = Sillyness
+trait-silly-desc = You spawn with an *weird looking* bananna
